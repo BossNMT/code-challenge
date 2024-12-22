@@ -1,1 +1,3 @@
-export { default as BackIcon } from './BackIcon';
+export * from "./SearchIcon";
+export * from "./LightBulbIcon";
+export * from "./MailIcon";

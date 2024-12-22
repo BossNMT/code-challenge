@@ -3,9 +3,8 @@ export const DEFAULT_REDIRECT_TO_ON_AUTHENTICATED = '/';
 export const PATHS = {
   ROOT: '/',
   HOME: '/home',
-  LOGIN: '/login',
-  REGISTER: '/register',
-  PROFILE: '/profile',
-  FORGOT_PASSWORD: '/forgot-password',
-  CHANGE_PASSWORD: '/change-password',
+  BLOG: '/blog',
+  SINGLE_POST: '/blog/:slug',
+  PAGES: '/pages',
+  CONCACT: '/contact',
 };
