@@ -33,24 +33,25 @@
     --blue: 229 96% 64%;
   }
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 233 27% 13%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 235 5% 44%;
     --secondary-foreground: 0 0% 98%;
+    --text: 0 0% 100%;
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
     --accent: 240 3.7% 15.9%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 4% 87%;
-    --input: 240 3.7% 15.9%;
+    --border: 236 19% 17%;
+    --input: 236 19% 17%;
     --ring: 240 4.9% 83.9%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
@@ -73,9 +74,9 @@
   width: 100%;
   margin: 0 auto;
 }
-@media (min-width: 640px) {
+@media (max-width: 639px) {
   .container {
-    max-width: 640px;
+    width: 100%;
     padding: 0 1rem;
   }
 }
@@ -101,4 +102,8 @@
   .container {
     max-width: 1280px;
   }
+}
+
+.prose {
+  max-width: 100%;
 }

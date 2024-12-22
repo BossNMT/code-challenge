@@ -5,3 +5,9 @@ interface LooseObject {
 interface LooseStringObject {
   [key: string]: string;
 }
+
+interface Meta {
+  currentPage: number;
+  totalPages: number;
+  totalRecords: number;
+}

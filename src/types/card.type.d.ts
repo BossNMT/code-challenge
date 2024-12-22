@@ -7,3 +7,16 @@ export type CardType = {
   date: string;
   url: string;
 };
+
+interface ResponseBlogItem {
+  _id: string;
+  title: string;
+  content: string;
+  image: string;
+  slug: string;
+  catalog: string;
+  user_name: string;
+  user_image: string;
+  createdAt: string;
+  updatedAt: string;
+}

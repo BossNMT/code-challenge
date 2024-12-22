@@ -8,4 +8,6 @@ export const ImageEnum = {
   avatar1: '/images/avatar1.jpeg',
   avatar2: '/images/avatar2.jpeg',
   avatar3: '/images/avatar3.jpeg',
+  logo404: '/images/404.svg',
+  logoDark: '/images/logoDark.png',
 };

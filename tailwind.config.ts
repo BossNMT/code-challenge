@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
+import tailwindcssTypography from "@tailwindcss/typography";
 
 export default {
   darkMode: ["class"],
@@ -7,7 +8,7 @@ export default {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/layouts/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/layouts/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -60,8 +61,26 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      typography: (theme) => ({
+        dark: {
+          css: {
+            color: theme("colors.text"),
+            a: {
+              color: theme("colors.blue"),
+              "&:hover": {
+                color: theme("colors.blue"),
+              },
+            },
+            h1: { color: theme("colors.white") },
+            h2: { color: theme("colors.white") },
+            h3: { color: theme("colors.white") },
+            strong: { color: theme("colors.white") },
+            blockquote: { color: theme("colors.gray.300") },
+          },
+        },
+      }),
     },
   },
 
-  plugins: [tailwindcssAnimate],
+  plugins: [tailwindcssAnimate, tailwindcssTypography],
 } satisfies Config;
