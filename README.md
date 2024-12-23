@@ -18,10 +18,19 @@ Ensure you have the following installed on your machine:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/BossNMT/code-challenge.git
+cd code-challenge
 
 yarn install
 yarn dev
 
 ```
+
+### Build and Start
+```bash
+yarn build
+
+yand start
+```
+
+### Link DEMO: http://45.77.246.11:2213
