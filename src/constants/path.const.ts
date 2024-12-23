@@ -4,7 +4,7 @@ export const PATHS = {
   ROOT: '/',
   HOME: '/',
   BLOG: '/blog',
-  SINGLE_POST: '/blog/:slug',
+  SINGLE_POST: '/blog',
   PAGES: '/pages',
   CONCACT: '/contact',
 };
