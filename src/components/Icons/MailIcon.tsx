@@ -1,4 +1,4 @@
-export const MailIcon: React.FC<React.SVGAttributes<{}>> = (props) => (
+export const MailIcon: React.FC<React.SVGAttributes<any>> = (props) => (
   <svg
     width="20"
     height="20"

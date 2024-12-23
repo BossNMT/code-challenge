@@ -5,15 +5,13 @@ import { blogService } from "@/services";
 import { ResponseBlogItem } from "@/types/card.type";
 import { API_IMAGE } from "@/config";
 import moment from "moment";
-import { Metadata } from "next";
 import Page404 from "@/layouts/404";
+// import { Metadata } from "next";
+export type paramsType = Promise<{ slug: string }>;
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  if (!params || !params.slug) {
+export async function generateMetadata(props: { params: paramsType }) {
+  const { slug } = await props.params;
+  if (!slug) {
     return {
       title: "Chi tiết blog",
       description: "Xem thêm về bài viết này.",
@@ -21,7 +19,7 @@ export async function generateMetadata({
   }
 
   try {
-    const blogDetail = await blogService.getBlogDetail(params.slug);
+    const blogDetail = await blogService.getBlogDetail(slug);
 
     return {
       title: blogDetail?.data?.title || "Chi tiết blog",
@@ -36,8 +34,8 @@ export async function generateMetadata({
   }
 }
 
-const BlogDetailPage = async ({ params }: { params: { slug: string } }) => {
-  const { slug } = params;
+const BlogDetailPage = async (props: { params: paramsType }) => {
+  const { slug } = await props.params;
 
   const res = await blogService.getBlogDetail(slug);
 
@@ -88,7 +86,7 @@ const BlogDetailPage = async ({ params }: { params: { slug: string } }) => {
         dangerouslySetInnerHTML={{ __html: blogDetail.content }}
       />
 
-      <Comment />
+      <Comment idBlog={blogDetail?._id} />
     </div>
   );
 };

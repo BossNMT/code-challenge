@@ -1,4 +1,4 @@
-export const MenuIcon: React.FC<React.SVGAttributes<{}>> = (props) => (
+export const MenuIcon: React.FC<React.SVGAttributes<any>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     x="0px"

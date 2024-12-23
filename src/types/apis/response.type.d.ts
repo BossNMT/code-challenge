@@ -3,7 +3,7 @@ type PaginationState = {
   total: number;
 };
 
-export interface ApiResponse<T = {}> {
+export interface ApiResponse<T> {
   pagination?: PaginationState;
   success: boolean;
   data?: T;

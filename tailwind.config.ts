@@ -61,7 +61,7 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      typography: (theme) => ({
+      typography: (theme: any) => ({
         dark: {
           css: {
             color: theme("colors.text"),

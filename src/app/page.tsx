@@ -22,9 +22,8 @@ export default function HomePage() {
   const [lengthSkeleton, setLengthSkeleton] = useState(6);
 
   useEffect(() => {
-    setTimeout(() => {
-      handleGetListBlog();
-    }, 1000);
+    handleGetListBlog();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
   const handleGetListBlog = async () => {

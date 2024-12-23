@@ -1,4 +1,4 @@
-export const LightBulbIcon: React.FC<React.SVGAttributes<{}>> = (props) => (
+export const LightBulbIcon: React.FC<React.SVGAttributes<any>> = (props) => (
   <svg
     width="14"
     height="14"

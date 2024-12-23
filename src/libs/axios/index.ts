@@ -124,6 +124,7 @@ class HttpService {
       // Case: Internal Server Error (500) or any other unhandled status
       case StatusCodeEnum['Internal Server Error']:
       default:
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         errorText = ERROR_CODE['ERROR']; // Default error message
         break;
     }
