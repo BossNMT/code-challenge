@@ -33,4 +33,4 @@ yarn build
 yand start
 ```
 
-### Link DEMO: http://45.77.246.11:2213
+### Link DEMO: http://139.180.140.187:2213
