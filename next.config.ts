@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['45.77.246.11'], // Thêm hostname của bạn ở đây
+    domains: ['139.180.140.187'],
   },
 };
 
